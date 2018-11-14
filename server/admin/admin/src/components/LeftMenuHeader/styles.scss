@@ -1,0 +1,33 @@
+// Import
+@import "../../styles/variables/variables";
+
+.leftMenuHeader {
+  /* stylelint-ignore */
+  background: $left-menu-link-hover;
+  height: $header-height;
+  background: linear-gradient(100deg, #d607cc 0%, #970590 100%);
+}
+
+.projectName {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: $header-height;
+  vertical-align: middle;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: $white;
+
+  background-image: url("https://blendarsys.com/wp-content/uploads/2018/04/Logotipo.png");
+  // background-image: url('../../assets/images/logo-strapi.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 3rem;
+}
+
+.leftMenuHeaderLink {
+  &:hover {
+    text-decoration: none;
+  }
+}

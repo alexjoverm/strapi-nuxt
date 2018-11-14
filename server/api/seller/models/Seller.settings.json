@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "seller",
+  "info": {
+    "name": "seller",
+    "description": "The company who sells the product\n"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "vat_number": {
+      "default": "",
+      "type": "string"
+    },
+    "address": {
+      "default": "",
+      "type": "string"
+    },
+    "articles": {
+      "collection": "article",
+      "via": "seller"
+    }
+  }
+}
